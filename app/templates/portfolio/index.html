@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <div class="hero-content">
+            <div class="left">
+                <h1>I’m an enthusiastic developer.</h1>
+                <h1>Leandro Borsini</h1>
+                <p>Builder dynamic app in Python using relational Databases.</p>
+                <a href="#contacto" class="btn">Contact me</a>
+            </div>
+            <div class="right">
+                <img src="{{ url_for('static', filename='big-data.png') }}" width="550px">
+            </div>
+        </div>
+    </div>
+
+{% include 'portfolio/section-first.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+
+{% endblock %}
